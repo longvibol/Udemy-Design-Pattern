@@ -1,0 +1,12 @@
+1- Singleton : Only one instance create from Class 
+
+យើងយកវាមកប្រើប៉ុន្មានដង់ក៏ដោយ វាបង្កើត Instance តែមួយនោះទេ ប្រើសម្រាប់ 
+- Logger (ពេលមានបញ្ហាយើងអោយវា
+បង្ហាញជាក់លាក់ មិនមែន បង្ហាញពត៌មានខុសគ្នានោះទេ
+- Datasource : ទិន្នន័យដូចគ្នា មិនមែនឃើញទិន្នន័យផ្សេងគ្នានោះទេ
+
+Step to create Singleton :
+
+1- Declare the constructor of the class as private 
+2- Declare a static method 
+3- Declare a static member of the same calss type in the class 

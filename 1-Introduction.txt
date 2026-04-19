@@ -1,0 +1,241 @@
+1- what is design pattern : ការដោះស្រាយបញ្ហាទៅតាម បរិបទ ជាក់ស្តែង
+- Solution 
+- Problem 
+- Context 
+
+2- why need it:
+
+- Capture design experience : កំណត់បានការ Design ដែលមានស្រាប់
+- Promote reuse without having to reinvent the wheel : អាចប្រើប្រាស់ឡើងវិញ
+- Define the system structure better : មានទំរង់ត្រឹមត្រូវ 
+- Provide a common design language : developer ដឹងទំរង់នឹងអាចកំណត់ការប្រើប្រាស់បាន
+
+3- How តើយើងត្រូវយក Pattern ណាមកប្រើ 
+- ត្រូវកំណត់បញ្ហា ជាមួយ និង Pattern ដែលមាន និងស្វែងរកដំណោះស្រាយ (Pattern Catalog)
+- បើអត់មាន យើងត្រូវធ្វើការកំណត់វា Document -> Problem -> solution (It called Candidate Pattern)
+
+4- Pattern Catalog ចែកចេញជា ពីរ :
+
+4-1 GOF Pattern Catalog : Gang of Four = Core Catalog pattern 
+4-2 JEE Pattern Catalog : 
+
+
+4-1 : GOF បែងចែកជា បី :
+
+4-1-1 Creational Patterns : ការបង្កើត Object or Class ដើម្បីធ្វើការដោះស្រាយ
+The creational patterns provide guidelines to instantiate a single object or group of objects.
+
+4-1-2 Structural Patterns: កំណត់ទំនាក់ទំនង រវាង Class and Class (relationship between class)
+
+4-1-3 Behavioral Patterns : របៀបដែល Class and Class ធ្វើការ ទំនាក់ទំនងគ្នា
+
+ define how the communication should happen among classes and objects
+
+4-1-1: Creational Patterns មានដូចជា
+- Singleton 
+- Factory 
+- Abstract Factory 
+- Builder 
+- Prototype 
+and more 
+
+
+4-1-2 Structural Patterns:
+- Adapter 
+- Bridge 
+- Flyweight 
+- Decorator 
+- Proxy 
+and more 
+
+4-1-3 Behavioral Patterns:
+- Command 
+- Interpreter 
+- Template Method 
+- Observer 
+- Visitor 
+
+
+---------------------
+
+4-2 JEE Pattern Catalog : 
+
+4-2-1 : Presentation Layer : which will present our application to the end client
+4-2-2 : Integration Layer : which is responsible for integrating with other applications or communicating with other applications 
+4-2-3 : Service Layer and : layer where all our business logic will go
+4-2-4 : Data Access Layer : performing the database operations
+
+4-2-1 : Presentation Layer:
+- Interception Filter
+- Front Controller 
+- MVC 
+- Context Object 
+
+4-2-2 : Integration Layer:
+- Service Activator 
+- Web Service Broker 
+
+4-2-4 : Data Access Layer : CRUE Operation 
+- Data Access Object 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
