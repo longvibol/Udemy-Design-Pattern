@@ -1,0 +1,98 @@
+1- Interface : Person 
+
+package com.vibol.corepattern.factory.assignment;
+
+public interface Person {
+	
+	void wish(String msg);
+
+}
+
+2- Implementation Male and Female 
+
+package com.vibol.corepattern.factory.assignment;
+
+public class Male implements Person {
+
+	@Override
+	public void wish(String msg) {
+		System.out.println("Male wishing is : " + msg);
+
+	}
+
+}
+
+
+--------------
+
+package com.vibol.corepattern.factory.assignment;
+
+public class Female implements Person {
+
+	@Override
+	public void wish(String msg) {
+		System.out.println("Female wishing is : " + msg);
+
+	}
+
+}
+
+3- PersonFactory 
+
+package com.vibol.corepattern.factory.assignment;
+
+public class PersonFactory {
+
+	public static Person createWishing(String gender) {
+		
+		Person p = null;
+		if (gender.equals("male")) {
+			p = new Male();
+		} else if (gender.equals("female")) {
+			p = new Female();
+		}
+
+		return p;
+	}
+
+}
+
+
+4- PersonWish 
+
+package com.vibol.corepattern.factory.assignment;
+
+public class PersonWish {
+
+	public Person persion(String gender, String wish) {
+
+		Person persion = PersonFactory.createWishing(gender);
+		persion.wish(wish);
+
+		return persion;
+	}
+
+}
+
+
+5- PersonImp
+
+package com.vibol.corepattern.factory.assignment;
+
+public class PersonImp {
+
+	public static void main(String[] args) {
+		
+		PersonWish persionWish = new PersonWish();
+		persionWish.persion("female", "I wish i have a beautiful");
+		persionWish.persion("male", "I wish i have a beautiful");
+
+	}
+
+}
+
+
+6- Result :
+
+Female wishing is : I wish i have a beautiful
+Male wishing is : I wish i have a more money
