@@ -1,0 +1,58 @@
+1- interface PaymentProcessor
+
+package com.vibol.corepattern.adapter05.hw01;
+
+public interface PaymentProcessor {
+
+	Double pay(Double dollars);
+}
+
+2- PaymentProcessorImpl
+
+package com.vibol.corepattern.adapter05.hw01;
+
+public class PaymentProcessorImpl implements PaymentProcessor{
+	
+	
+	@Override
+	public Double pay(Double dollars) {
+		Double riel = dollars * 4000; // convert
+        return riel;
+	}
+
+}
+
+
+3- PaymentAdapter
+
+package com.vibol.corepattern.adapter05.hw01;
+
+public class PaymentAdapter {
+	
+	PaymentProcessor payment = new PaymentProcessorImpl();
+	
+	Double payInRiel(Double i) {
+		
+		return payment.pay(i);		
+	}
+	
+}
+
+
+4- PaymentApp
+
+package com.vibol.corepattern.adapter05.hw01;
+
+public class PaymentApp {
+
+	public static void main(String[] args) {
+		PaymentProcessor processor = new PaymentProcessorImpl();
+
+        Double inDollars = 5d;
+        Double result = processor.pay(inDollars);
+
+        System.out.println("USD: " + inDollars + " -> Riel: " + result);
+
+	}
+
+}
