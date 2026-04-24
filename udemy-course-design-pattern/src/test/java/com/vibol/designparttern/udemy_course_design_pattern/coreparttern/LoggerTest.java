@@ -11,7 +11,7 @@ import java.util.concurrent.CountDownLatch;
 
 import org.junit.jupiter.api.Test;
 
-import com.vibol.corepattern.singletone.Logger;
+import com.vibol.corepattern.singletone01.Logger;
 
 public class LoggerTest {
 
